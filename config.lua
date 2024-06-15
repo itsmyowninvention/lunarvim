@@ -7,6 +7,7 @@
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.relativenumber = true
+vim.o.autoread = true
 
 -- general
 lvim.log.level = "info"
@@ -147,12 +148,6 @@ lvim.plugins = {
       vim.cmd "highlight default link gitblame SpecialComment"
       vim.g.gitblame_enabled = 0
     end,
-  },
-  {
-    "tzachar/cmp-tabnine",
-    build = "./install.sh",
-    dependencies = "hrsh7th/nvim-cmp",
-    event = "InsertEnter",
   },
   {
     "rmagatti/goto-preview",
